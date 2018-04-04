@@ -2,10 +2,6 @@
 header.masthead {
   text-align: center;
   color: white;
-  //background-image: url('../img/header-bg.jpg');
-  //background-repeat: no-repeat;
-  //background-attachment: scroll;
-  //background-position: center center;
   @include background-cover;
   background-color: $gray-800;
   .intro-text {
@@ -37,7 +33,7 @@ header.masthead {
 @media(min-width: 768px) {
   header.masthead {
     .intro-text {
-      padding-top: 300px;
+      padding-top: 250px;
       padding-bottom: 500px;
       .intro-lead-in {
         font-size: 40px;
