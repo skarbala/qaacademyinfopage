@@ -15,3 +15,17 @@
     margin-top: 0;
   }
 }
+.about-info{
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  font-size: 20px;
+  li{
+    margin: 25px 0;
+    span{
+      color:darken($primary, 5%);
+      font-weight: 700;
+    }
+  }
+  @include heading-font;
+}
