@@ -3,6 +3,7 @@
   .portfolio-item {
     right: 0;
     margin: 0 0 30px;
+
     .portfolio-link {
       position: relative;
       display: block;
@@ -52,7 +53,7 @@
       padding: 50px;
       text-align: center;
       background-color: $white;
-      min-height: 240px;
+      min-height: 270px;
       h3 {
         color: $gray-800;
       }
@@ -64,15 +65,24 @@
       h5 {
         color: $primary;
       }
-      p {
-        font-size: 16px;
-        font-style: italic;
+      p{
+        margin:15px 0;
+      }
+      footer {
+        position:absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom:40px;
+        font-weight: 700;
+        font-size: 18px;
         margin: 20px 0 0 0;
+        padding: 0;
+        z-index: 1;
       }
       a {
         text-decoration: none;
-        font-weight: 700;
-        font-size: 18px;
       }
     }
   }
@@ -147,6 +157,7 @@
         ul {
           list-style: none;
           text-align: left;
+          padding: 0;
           li {
             margin: 10px 0;
           }
