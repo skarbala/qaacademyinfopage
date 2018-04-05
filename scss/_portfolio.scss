@@ -10,6 +10,9 @@
       margin: 0 auto;
       cursor: pointer;
       text-decoration: none;
+      &:focus{
+        outline: none;
+      }
       .portfolio-hover {
         position: absolute;
         width: 100%;
@@ -89,7 +92,7 @@
 .portfolio-modal {
   padding-right: 0px !important;
   .modal-dialog {
-    margin: 150px auto;
+    margin: 50px auto;
     max-width: 50vw;
   }
   .modal-content {
