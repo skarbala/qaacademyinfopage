@@ -65,9 +65,8 @@
         font-size: 16px;
         font-style: italic;
         margin: 20px 0 0 0;
-        //@include serif-font;
       }
-      a{
+      a {
         text-decoration: none;
         font-weight: 700;
         font-size: 18px;
@@ -118,43 +117,43 @@
     button {
       cursor: pointer;
     }
-  }
-  .close-modal {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    width: 75px;
-    height: 75px;
-    cursor: pointer;
-    background-color: transparent;
-    &:hover {
-      opacity: 0.3;
-    }
-    .lr {
-      /* Safari and Chrome */
-      z-index: 1051;
-      width: 1px;
-      height: 75px;
-      margin-left: 35px;
-      /* IE 9 */
-      -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
-      background-color: $gray-900;
-      .rl {
-        /* Safari and Chrome */
-        z-index: 1052;
-        width: 1px;
-        height: 75px;
-        /* IE 9 */
-        -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        transform: rotate(90deg);
-        background-color: $gray-900;
+    .modal-description {
+      @include heading-font;
+      margin: 30px 0;
+      .modal-description-row {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
       }
+      div {
+        text-align: left;
+        display: inline-block;
+        font-size: 16px;
+      }
+      .value {
+        font-weight: 600;
+        color: $gray-700;
+      }
+      .modal-description-conclusion {
+        margin-top: 30px;
+        text-align: center;
+        h4 {
+          text-align: center;
+          color: $primary;
+        }
+        ul {
+          list-style: none;
+          text-align: left;
+          li {
+            margin: 10px 0;
+          }
+        }
+      }
+
     }
   }
-  .modal-backdrop {
 
+  .modal-backdrop {
+    font-size: 10px;
   }
 }
