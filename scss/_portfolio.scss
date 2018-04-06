@@ -11,7 +11,7 @@
       margin: 0 auto;
       cursor: pointer;
       text-decoration: none;
-      &:focus{
+      &:focus {
         outline: none;
       }
       .portfolio-hover {
@@ -66,14 +66,14 @@
         margin-top: 30px;
         color: $primary;
       }
-      p{
-        margin:15px 0;
+      p {
+        margin: 15px 0;
       }
       footer {
-        position:absolute;
+        position: absolute;
         left: 0;
         right: 0;
-        bottom:40px;
+        bottom: 40px;
         font-weight: 700;
         font-size: 18px;
         margin: 20px 0 0;
@@ -95,6 +95,10 @@
     .portfolio-item {
       margin: 0 0 30px;
     }
+    .modal-dialog {
+      margin: 50px auto;
+      max-width: 50vw;
+    }
   }
 }
 
@@ -102,7 +106,7 @@
   padding-right: 0px !important;
   .modal-dialog {
     margin: 50px auto;
-    max-width: 50vw;
+    max-width: 90vw;
   }
   .modal-content {
     padding: 50px 0;
@@ -136,6 +140,18 @@
         display: block;
         margin: 10px auto;
         width: 80%;
+        ul {
+          list-style: none;
+          text-align: left;
+          padding: 0;
+          li {
+            margin: 10px 0;
+            span {
+              font-weight: 600;
+              color: $gray-700;
+            }
+          }
+        }
       }
       div {
         text-align: left;
@@ -146,27 +162,17 @@
         font-weight: 600;
         color: $gray-700;
       }
-      .modal-description-conclusion {
-        margin-top: 30px;
+      h4 {
         text-align: center;
-        h4 {
-          text-align: center;
-          color: $primary;
-        }
-        ul {
-          list-style: none;
-          text-align: left;
-          padding: 0;
-          li {
-            margin: 10px 0;
-          }
-        }
+        color: $primary;
+        margin: 30px auto;
       }
-
     }
   }
-
-  .modal-backdrop {
-    font-size: 10px;
-  }
 }
+
+.modal-backdrop {
+  font-size: 10px;
+}
+
+
