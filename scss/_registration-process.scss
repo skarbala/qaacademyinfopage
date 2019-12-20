@@ -1,0 +1,29 @@
+#registration-process {
+  background-color: $gray-800;
+  p{
+    color: #fff;
+    display: inline-block;
+    margin:10px;
+    font-size: 1.3em;
+  }
+  img {
+    height: 120px;
+    margin: 50px 0;
+  }
+  .section-heading{
+    color: $primary;
+  }
+  .section-subheading{
+    color: #fff;
+  }
+  .registration-title{
+    @include third-rail;
+    color: $primary;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .registration-step{
+    margin-bottom:50px;
+  }
+}

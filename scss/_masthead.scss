@@ -4,26 +4,29 @@ header.masthead {
   color: white;
   @include background-cover;
   background-color: $gray-800;
+
+
   .intro-text {
     padding-top: 150px;
     padding-bottom: 100px;
+
     .intro-lead-in {
       font-size: 22px;
       font-style: italic;
       line-height: 22px;
       margin-bottom: 25px;
-      @include serif-font;
+      font-weight: 200;
+      @include heading-font;
     }
+
     .intro-heading {
-      font-size: 30px;
+      color: $primary;
+      font-size: 3em;
       font-weight: 700;
       line-height: 40px;
-      margin-bottom: 25px;
-      @include heading-font;
-      &:nth-child(2) {
-        color: $primary;
-      }
+      @include third-rail;
     }
+
     a {
       margin-top: 50px;
     }
@@ -35,20 +38,26 @@ header.masthead {
     .intro-text {
       padding-top: 250px;
       padding-bottom: 500px;
+
       .intro-lead-in {
-        font-size: 40px;
+        font-size: 2em;
         font-style: italic;
         line-height: 40px;
-        margin-bottom: 25px;
-        @include serif-font;
-      }
-      .intro-heading {
-        font-size: 50px;
-        font-weight: 700;
-        line-height: 30px;
-        margin-bottom: 70px;
+        margin-bottom: 120px;
+        font-weight: 200;
         @include heading-font;
       }
+
+      .intro-heading {
+        font-size: 6em;
+        font-weight: 700;
+        line-height: 30px;
+        margin-bottom: 30px;
+        @include third-rail;
+      }
     }
+
   }
+
+
 }

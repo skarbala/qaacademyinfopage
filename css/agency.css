@@ -1,3 +1,8 @@
+@font-face {
+  src: url("../assets/ThirdRail.ttf");
+  font-family: 'ThirdRail';
+}
+
 body {
   overflow-x: hidden;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -97,6 +102,16 @@ img::-moz-selection {
   background: transparent;
 }
 
+.btn-more-info {
+  padding: 1em 5em;
+  background-color: #fed136;
+  margin: 0 auto;
+}
+
+.btn-more-info:active, .btn-more-info:focus {
+  outline: none;
+}
+
 #mainNav {
   background-color: #212529;
 }
@@ -114,7 +129,8 @@ img::-moz-selection {
 
 #mainNav .navbar-brand {
   color: #fed136;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'ThirdRail', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -163,6 +179,14 @@ img::-moz-selection {
     font-size: 1.25em;
     padding: 12px 0;
   }
+  .registration-link {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .registration-link i {
+    font-size: 1.0em;
+    margin-left: 5px;
+  }
 }
 
 header.masthead {
@@ -185,19 +209,16 @@ header.masthead .intro-text .intro-lead-in {
   font-style: italic;
   line-height: 22px;
   margin-bottom: 25px;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-header.masthead .intro-text .intro-heading {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 40px;
-  margin-bottom: 25px;
+  font-weight: 200;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-header.masthead .intro-text .intro-heading:nth-child(2) {
+header.masthead .intro-text .intro-heading {
   color: #fed136;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 40px;
+  font-family: 'ThirdRail', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 header.masthead .intro-text a {
@@ -210,19 +231,24 @@ header.masthead .intro-text a {
     padding-bottom: 500px;
   }
   header.masthead .intro-text .intro-lead-in {
-    font-size: 40px;
+    font-size: 2em;
     font-style: italic;
     line-height: 40px;
-    margin-bottom: 25px;
-    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  }
-  header.masthead .intro-text .intro-heading {
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 30px;
-    margin-bottom: 70px;
+    margin-bottom: 120px;
+    font-weight: 200;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
+  header.masthead .intro-text .intro-heading {
+    font-size: 6em;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 30px;
+    font-family: 'ThirdRail', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+}
+
+#basic-info {
+  background-color: #fff;
 }
 
 .service-heading {
@@ -230,209 +256,45 @@ header.masthead .intro-text a {
   text-transform: none;
 }
 
-#tools img {
+.basic-info-title {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+#registration-process {
+  background-color: #343a40;
+}
+
+#registration-process p {
+  color: #fff;
+  display: inline-block;
+  margin: 10px;
+  font-size: 1.3em;
+}
+
+#registration-process img {
   height: 120px;
   margin: 50px 0;
 }
 
-#portfolio .portfolio-item {
-  right: 0;
-  margin: 0 0 30px;
-}
-
-#portfolio .portfolio-item .portfolio-link {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-#portfolio .portfolio-item .portfolio-link:focus {
-  outline: none;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-  opacity: 0;
-  background: rgba(254, 209, 54, 0.9);
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
-  opacity: 1;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  height: 20px;
-  margin-top: -12px;
-  text-align: center;
-  color: white;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
-  margin-top: -12px;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
-  margin: 0;
-}
-
-#portfolio .portfolio-item .portfolio-caption {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  padding: 25px;
-  text-align: center;
-  background-color: #fff;
-  min-height: 270px;
-}
-
-#portfolio .portfolio-item .portfolio-caption h3 {
-  color: #343a40;
-}
-
-#portfolio .portfolio-item .portfolio-caption h4 {
-  margin: 0;
-  text-transform: none;
-  color: #343a40;
-}
-
-#portfolio .portfolio-item .portfolio-caption h5 {
-  margin-top: 30px;
+#registration-process .section-heading {
   color: #fed136;
 }
 
-#portfolio .portfolio-item .portfolio-caption p {
-  margin: 15px 0;
+#registration-process .section-subheading {
+  color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-caption footer {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 40px;
-  font-weight: 700;
-  font-size: 18px;
-  margin: 20px 0 0;
-  padding: 0;
-  z-index: 1;
-}
-
-#portfolio .portfolio-item .portfolio-caption a {
-  text-decoration: none;
-}
-
-#portfolio * {
-  z-index: 2;
-}
-
-@media (min-width: 767px) {
-  #portfolio .portfolio-item {
-    margin: 0 0 30px;
-  }
-  #portfolio .modal-dialog {
-    margin: 50px auto;
-    max-width: 50vw;
-  }
-}
-
-.portfolio-modal {
-  padding-right: 0px !important;
-}
-
-.portfolio-modal .modal-dialog {
-  margin: 50px auto;
-  max-width: 90vw;
-}
-
-.portfolio-modal .modal-content {
-  padding: 50px 0;
-  text-align: center;
-}
-
-.portfolio-modal .modal-content h2 {
-  font-size: 3em;
-  margin-bottom: 15px;
-}
-
-.portfolio-modal .modal-content p {
-  margin-bottom: 30px;
-}
-
-.portfolio-modal .modal-content p.item-intro {
-  font-size: 16px;
-  font-style: italic;
-  margin: 20px 0 30px;
-}
-
-.portfolio-modal .modal-content ul.list-inline {
-  margin-top: 0;
-  margin-bottom: 30px;
-}
-
-.portfolio-modal .modal-content img {
-  margin-bottom: 30px;
-}
-
-.portfolio-modal .modal-content button {
-  cursor: pointer;
-}
-
-.portfolio-modal .modal-content .modal-description {
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  margin: 30px 0;
-}
-
-.portfolio-modal .modal-content .modal-description .modal-description-row {
-  display: block;
-  margin: 10px auto;
-  width: 80%;
-}
-
-.portfolio-modal .modal-content .modal-description .modal-description-row ul {
-  list-style: none;
-  text-align: left;
-  padding: 0;
-}
-
-.portfolio-modal .modal-content .modal-description .modal-description-row ul li {
-  margin: 10px 0;
-}
-
-.portfolio-modal .modal-content .modal-description .modal-description-row ul li span {
-  font-weight: 600;
-  color: #495057;
-}
-
-.portfolio-modal .modal-content .modal-description div {
-  text-align: left;
+#registration-process .registration-title {
+  font-family: 'ThirdRail', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fed136;
   display: inline-block;
-  font-size: 16px;
+  text-align: left;
+  margin-bottom: 0;
 }
 
-.portfolio-modal .modal-content .modal-description .value {
-  font-weight: 600;
-  color: #495057;
-}
-
-.portfolio-modal .modal-content .modal-description h4 {
-  text-align: center;
-  color: #fed136;
-  margin: 30px auto;
-}
-
-.modal-backdrop {
-  font-size: 10px;
+#registration-process .registration-step {
+  margin-bottom: 50px;
 }
 
 #references img {
@@ -446,8 +308,8 @@ header.masthead .intro-text a {
 }
 
 .team-member img {
-  width: 225px;
-  height: 225px;
+  width: 150px;
+  height: 150px;
 }
 
 .team-member h4 {
