@@ -261,6 +261,10 @@ header.masthead .intro-text a {
   text-transform: uppercase;
 }
 
+.basic-info-item {
+  margin-bottom: 20px;
+}
+
 #registration-process {
   background-color: #343a40;
 }
