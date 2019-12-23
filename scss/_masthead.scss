@@ -40,7 +40,7 @@ header.masthead {
       padding-bottom: 500px;
 
       .intro-lead-in {
-        font-size: 2em;
+        font-size: 3em;
         font-style: italic;
         line-height: 40px;
         margin-bottom: 120px;
@@ -49,10 +49,10 @@ header.masthead {
       }
 
       .intro-heading {
-        font-size: 6em;
+        font-size: 8em;
         font-weight: 700;
         line-height: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         @include third-rail;
       }
     }

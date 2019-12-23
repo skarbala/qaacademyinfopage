@@ -48,7 +48,7 @@ section {
     font-size: 25px;
     font-weight: 400;
     font-style: italic;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
     text-transform: none;
     @include body-font;
   }
@@ -112,10 +112,16 @@ img::-moz-selection {
 .btn-more-info {
   padding: 1em 5em;
   background-color: $primary;
-  margin: 0 auto;
+  //margin: 20px auto;
+  transition: transform 250ms ease-in;
 
   &:active, &:focus {
     outline: none;
+    box-shadow: none;
+  }
+
+  &:hover {
+    transform: scale(1.05, 1.05)
   }
 
 }

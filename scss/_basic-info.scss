@@ -13,6 +13,15 @@
 .basic-info-title {
   font-size: 1em;
   text-transform: uppercase;
+  border-bottom: 2px solid $primary;
+  display: inline-block;
+
+
 }
 .basic-info-item{
-  margin-bottom: 20px;}
+  margin-bottom: 20px;
+  span{
+    font-weight: 700;
+    font-size: 1.1em;
+  }
+}
