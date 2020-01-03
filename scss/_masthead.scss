@@ -22,7 +22,7 @@ header.masthead {
     .intro-heading {
       color: $primary;
       font-size: 3em;
-      font-weight: 700;
+      font-weight: 100;
       line-height: 40px;
       @include third-rail;
     }
@@ -50,7 +50,7 @@ header.masthead {
 
       .intro-heading {
         font-size: 8em;
-        font-weight: 700;
+        font-weight: 100;
         line-height: 30px;
         margin-bottom: 50px;
         @include third-rail;

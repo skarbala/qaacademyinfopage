@@ -113,15 +113,16 @@ img::-moz-selection {
   padding: 1em 5em;
   background-color: $primary;
   //margin: 20px auto;
-  transition: transform 250ms ease-in;
-
+  transition: transform 100ms ease-in;
+  border-radius: 0;
   &:active, &:focus {
     outline: none;
     box-shadow: none;
   }
 
   &:hover {
-    transform: scale(1.05, 1.05)
+    transform: scale(1.1);
+    color:white;
   }
 
 }

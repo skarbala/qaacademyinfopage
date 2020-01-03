@@ -105,7 +105,8 @@ img::-moz-selection {
 .btn-more-info {
   padding: 1em 5em;
   background-color: #fed136;
-  transition: transform 250ms ease-in;
+  transition: transform 100ms ease-in;
+  border-radius: 0;
 }
 
 .btn-more-info:active, .btn-more-info:focus {
@@ -114,7 +115,8 @@ img::-moz-selection {
 }
 
 .btn-more-info:hover {
-  transform: scale(1.05, 1.05);
+  transform: scale(1.1);
+  color: white;
 }
 
 #mainNav {
@@ -153,6 +155,7 @@ img::-moz-selection {
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #fed136;
+  font-weight: 700;
 }
 
 @media (min-width: 992px) {
@@ -166,7 +169,6 @@ img::-moz-selection {
     background-color: transparent;
   }
   #mainNav .navbar-brand {
-    font-weight: 700;
     font-size: 1.75em;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -221,7 +223,7 @@ header.masthead .intro-text .intro-lead-in {
 header.masthead .intro-text .intro-heading {
   color: #fed136;
   font-size: 3em;
-  font-weight: 700;
+  font-weight: 100;
   line-height: 40px;
   font-family: 'ThirdRail', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -245,7 +247,7 @@ header.masthead .intro-text a {
   }
   header.masthead .intro-text .intro-heading {
     font-size: 8em;
-    font-weight: 700;
+    font-weight: 100;
     line-height: 30px;
     margin-bottom: 50px;
     font-family: 'ThirdRail', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -320,6 +322,10 @@ header.masthead .intro-text a {
 #references img {
   height: 120px;
   margin: 10px 0;
+}
+
+#references .reference-images {
+  margin-bottom: 100px;
 }
 
 .team-member {
