@@ -279,6 +279,11 @@ header.masthead .intro-text a {
   font-size: 1.1em;
 }
 
+.basic-info-item a {
+  color: #000;
+  font-weight: 700;
+}
+
 #registration-process {
   background-color: #343a40;
 }
