@@ -344,7 +344,7 @@ header.masthead .intro-text a {
   margin-bottom: 50px;
 }
 
-#registration-process .registration-step span {
+#registration-process .registration-step span, #registration-process .registration-step a {
   font-weight: 700;
 }
 
