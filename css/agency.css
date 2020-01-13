@@ -119,11 +119,11 @@ img::-moz-selection {
   color: white;
 }
 
-#mainNav {
-  background-color: #212529;
+#mainNav.navbar {
+  background-color: #343a40;
 }
 
-#mainNav .navbar-toggler {
+#mainNav.navbar .navbar-toggler {
   font-size: 12px;
   right: 0;
   padding: 13px;
@@ -134,34 +134,34 @@ img::-moz-selection {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-#mainNav .navbar-brand {
+#mainNav.navbar .navbar-brand {
   color: #fed136;
   font-family: 'ThirdRail', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
 
-#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+#mainNav.navbar .navbar-brand.active, #mainNav.navbar .navbar-brand:active, #mainNav.navbar .navbar-brand:focus, #mainNav.navbar .navbar-brand:hover {
   color: #fec503;
 }
 
-#mainNav .navbar-nav .nav-item .nav-link {
+#mainNav.navbar .navbar-nav .nav-item .nav-link {
   font-size: 90%;
-  font-weight: 400;
+  font-weight: 700;
   padding: 0.75em 0;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   color: white;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+#mainNav.navbar .navbar-nav .nav-item .nav-link.active, #mainNav.navbar .navbar-nav .nav-item .nav-link:hover {
   color: #fed136;
   font-weight: 700;
 }
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -186,14 +186,16 @@ img::-moz-selection {
     font-size: 1.25em;
     padding: 12px 0;
   }
-  .registration-link {
-    text-transform: uppercase;
-    font-weight: 700;
-  }
-  .registration-link i {
-    font-size: 1.0em;
-    margin-left: 5px;
-  }
+}
+
+.registration-link {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.registration-link i {
+  font-size: 1.0em;
+  margin-left: 5px;
 }
 
 header.masthead {
