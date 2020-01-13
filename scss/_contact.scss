@@ -1,8 +1,26 @@
 // Styling for the contact section
 section#contact {
-  background-color: $gray-800;
+  position: relative;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../assets/gearsbackground.jpg);
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: -1;
+  }
+  background-color: rgba($gray-800, .9);
+
   .section-heading {
-    color: $white;
+    color: $primary;
+  }
+  .section-subheading{
+    color: #fff;
   }
   a{
     text-decoration: none;

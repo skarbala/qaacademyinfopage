@@ -406,10 +406,28 @@ header.masthead .intro-text a {
 }
 
 section#contact {
-  background-color: #343a40;
+  position: relative;
+  background-color: rgba(52, 58, 64, 0.9);
+}
+
+section#contact:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../assets/gearsbackground.jpg);
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: -1;
 }
 
 section#contact .section-heading {
+  color: #fed136;
+}
+
+section#contact .section-subheading {
   color: #fff;
 }
 
