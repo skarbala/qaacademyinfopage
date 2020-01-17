@@ -115,6 +115,7 @@ img::-moz-selection {
   //margin: 20px auto;
   transition: transform 100ms ease-in;
   border-radius: 0;
+
   &:active, &:focus {
     outline: none;
     box-shadow: none;
@@ -122,7 +123,6 @@ img::-moz-selection {
 
   &:hover {
     transform: scale(1.1);
-    color:white;
   }
 
 }
