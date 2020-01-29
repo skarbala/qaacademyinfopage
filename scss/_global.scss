@@ -110,7 +110,7 @@ img::-moz-selection {
 
 
 .btn-more-info {
-  padding: 1em 5em;
+  padding: 15px 30px;
   background-color: $primary;
   //margin: 20px auto;
   transition: transform 100ms ease-in;
@@ -125,4 +125,10 @@ img::-moz-selection {
     transform: scale(1.1);
   }
 
+}
+
+@media(min-width: 768px) {
+ .btn-more-info{
+   padding: 20px 80px;
+ }
 }

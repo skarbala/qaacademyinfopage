@@ -103,7 +103,7 @@ img::-moz-selection {
 }
 
 .btn-more-info {
-  padding: 1em 5em;
+  padding: 15px 30px;
   background-color: #fed136;
   transition: transform 100ms ease-in;
   border-radius: 0;
@@ -116,6 +116,12 @@ img::-moz-selection {
 
 .btn-more-info:hover {
   transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+  .btn-more-info {
+    padding: 20px 80px;
+  }
 }
 
 #mainNav.navbar {
